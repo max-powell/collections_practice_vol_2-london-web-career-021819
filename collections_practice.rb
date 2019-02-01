@@ -56,6 +56,7 @@ end
 def organize_schools(schools)
   new_hash = {}
   schools.each do |school, loc_hash|
+<<<<<<< HEAD
     if new_hash.keys.include?(loc_hash[:location])
       new_hash[loc_hash[:location]] << school
     else
@@ -63,4 +64,9 @@ def organize_schools(schools)
     end
   end
   new_hash
+=======
+    new_hash[loc_hash[:location]] = school
+  end
+  binding.pry
+>>>>>>> 3b8e3335fedba70e53442b0b56761f4cc0bc73f5
 end
